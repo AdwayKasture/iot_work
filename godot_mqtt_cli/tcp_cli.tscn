@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://tcp_cli.gd" type="Script" id=1]
+[ext_resource path="res://connect_packet.gd" type="Script" id=2]
+[ext_resource path="res://subscribe_packet.gd" type="Script" id=3]
+[ext_resource path="res://publish_packet.gd" type="Script" id=4]
+
+[node name="tcp_cli" type="Node"]
+script = ExtResource( 1 )
+
+[node name="connect_packet" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="subscribe_packet" type="Node" parent="."]
+script = ExtResource( 3 )
+
+[node name="publish_packet" type="Node" parent="."]
+script = ExtResource( 4 )
