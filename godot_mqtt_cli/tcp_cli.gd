@@ -94,4 +94,4 @@ func _input(event):
 		if event is InputEventMouseButton:
 			print("publishing packet ")
 			#publish packet params : topic , data
-			s.put_data($publish_packet.gen_publish_packet("home","son of a bitch im in!!!"))
+			s.put_data($publish_packet.gen_publish_packet("home","enter data here!!!"))
