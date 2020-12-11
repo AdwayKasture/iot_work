@@ -86,7 +86,7 @@ func parse_packets(arr):
 			#update base pointer
 			f = arr[f+1] + 2
 		else:
-			print("print unknown packet :" + arr[f])
+			f = len_2
 			
 
 # replace with your own trigger to publish  for example button press ....
