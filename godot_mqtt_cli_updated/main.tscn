@@ -1,0 +1,66 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+
+[node name="main" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="connect" type="Button" parent="."]
+margin_left = 22.1619
+margin_top = 30.5604
+margin_right = 199.162
+margin_bottom = 63.5604
+text = "connect"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="subscribe" type="Button" parent="."]
+margin_left = 54.2399
+margin_top = 383.376
+margin_right = 221.24
+margin_bottom = 417.376
+text = "subscribe"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="publish" type="Button" parent="."]
+margin_left = 668.245
+margin_top = 378.43
+margin_right = 830.245
+margin_bottom = 413.43
+text = "publish"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="topic_sub" type="LineEdit" parent="."]
+margin_left = 56.9427
+margin_top = 461.055
+margin_right = 237.943
+margin_bottom = 493.055
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="topic_pub" type="LineEdit" parent="."]
+margin_left = 664.0
+margin_top = 457.0
+margin_right = 793.0
+margin_bottom = 496.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="content_pub" type="LineEdit" parent="."]
+margin_left = 669.0
+margin_top = 523.0
+margin_right = 950.0
+margin_bottom = 555.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="button_down" from="connect" to="." method="_on_connect_button_pressed"]
+[connection signal="button_down" from="subscribe" to="." method="_on_subscribe_button_down"]
+[connection signal="button_down" from="publish" to="." method="_on_publish_button_down"]
